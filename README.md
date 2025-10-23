@@ -1,59 +1,143 @@
 # Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3.
+A modern, responsive portfolio website built with **Angular 20** and **TypeScript**. Features a refined component architecture with smooth navigation, intersection observer-based section tracking, and a beautiful user interface.
 
-## Development server
+## Overview
 
-To start a local development server, run:
+This portfolio showcases a professional project with the following highlights:
 
-```bash
-ng serve
+- **Standalone Components**: Leverages Angular's latest standalone API for cleaner architecture
+- **OnPush Change Detection**: Optimized performance with `ChangeDetectionStrategy.OnPush`
+- **Responsive Design**: Mobile-first SCSS styling with design tokens
+- **Intersection Observer**: Automatic section tracking for smooth scrolling experience
+- **Type-Safe**: Full TypeScript support with proper interfaces and models
+- **Modular Structure**: Well-organized component hierarchy for maintainability
+
+## Tech Stack
+
+- **Angular**: v20.3.0
+- **TypeScript**: v5.9.2
+- **RxJS**: v7.8.0
+- **SCSS**: For styling with design tokens
+- **Prettier**: Code formatting
+
+## Project Structure
+
+```
+src/app/
+├── portfolio/
+│   ├── components/
+│   │   ├── portfolio-sidebar/     # Sidebar with navigation and social links
+│   │   │   └── subcomponents/
+│   │   │       ├── name-section/
+│   │   │       ├── nav-menu/
+│   │   │       └── social-links/
+│   │   └── portfolio-content/     # Main content area
+│   │       └── sections/
+│   │           ├── about-section/
+│   │           ├── experience-section/
+│   │           └── projects-section/
+│   ├── portfolio.component.ts     # Main orchestrator
+│   ├── portfolio.constants.ts     # Portfolio data
+│   ├── portfolio.model.ts         # TypeScript interfaces
+│   └── design.tokens.scss         # Design system
+├── services/
+│   └── cursor.service.ts          # Cursor effects
+└── components/
+    └── cursor-effect/             # Visual effects component
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Getting Started
 
-## Code scaffolding
+### Prerequisites
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Node.js and npm installed
+- Angular CLI 20.3.3
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Installation
 
 ```bash
-ng generate --help
+npm install
 ```
 
-## Building
+### Development Server
 
-To build the project run:
+Start the local development server:
 
 ```bash
-ng build
+npm start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Navigate to `http://localhost:4201/`. The application will automatically reload when you modify source files.
 
-## Running unit tests
+### Building
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Build the project for production:
 
 ```bash
-ng test
+npm run build
 ```
 
-## Running end-to-end tests
+The build artifacts will be stored in the `dist/` directory, optimized for performance.
 
-For end-to-end (e2e) testing, run:
+### Running Tests
+
+Execute unit tests with Karma:
 
 ```bash
-ng e2e
+npm test
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Watch mode for development:
 
-## Additional Resources
+```bash
+npm run watch
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Key Features
+
+### Component Architecture
+
+- **Standalone Components**: All components are standalone, reducing bundle size
+- **Smart Change Detection**: OnPush strategy for optimal performance
+- **Reusable Subcomponents**: Experience and project items are reusable components
+
+### User Experience
+
+- **Section Navigation**: Intersection observer tracks active sections during scroll
+- **Smooth Interactions**: SCSS animations and transitions
+- **Responsive Layout**: Adapts to all screen sizes
+
+### Code Quality
+
+- **Type Safety**: Comprehensive TypeScript interfaces
+- **Modular Design**: Separated concerns with clear component hierarchy
+- **Design Tokens**: Centralized design system for consistent styling
+
+## Customization
+
+### Portfolio Data
+
+Update your portfolio content in `src/app/portfolio/portfolio.constants.ts`:
+
+```typescript
+export const PORTFOLIO_DATA = {
+  /* your data */
+};
+export const EXPERIENCES = [
+  /* your experience items */
+];
+export const PROJECTS = [
+  /* your projects */
+];
+```
+
+### Styling
+
+Customize the design system in `src/app/portfolio/design.tokens.scss` for colors, fonts, and spacing.
+
+## Resources
+
+- [Angular Documentation](https://angular.dev)
+- [Angular CLI Documentation](https://angular.dev/tools/cli)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
