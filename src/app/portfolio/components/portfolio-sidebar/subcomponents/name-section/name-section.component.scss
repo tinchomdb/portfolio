@@ -1,0 +1,32 @@
+@import '../../../../design.tokens.scss';
+
+.name-section {
+  h1 {
+    font-size: $font-size-xxxl;
+    font-weight: $font-weight-bold;
+    margin: 0;
+    line-height: $line-height-tight;
+    background: linear-gradient(135deg, $color-primary 0%, $color-primary-light 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    @media (max-width: $breakpoint-md) {
+      font-size: $font-size-xxl;
+    }
+  }
+
+  .subtitle {
+    font-size: $font-size-md;
+    color: $color-text-muted;
+    margin: $spacing-sm 0 0;
+    font-weight: $font-weight-regular;
+  }
+
+  .tagline {
+    font-size: $font-size-md;
+    color: $color-text-secondary;
+    margin: $spacing-md 0 0;
+    line-height: $line-height-normal;
+  }
+}

@@ -1,0 +1,15 @@
+@import '../../design.tokens.scss';
+
+.portfolio-content {
+  padding-top: $spacing-xxxl;
+  max-width: 600px;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  @media (max-width: $breakpoint-md) {
+    padding: 0;
+    gap: $spacing-xxxl;
+  }
+}

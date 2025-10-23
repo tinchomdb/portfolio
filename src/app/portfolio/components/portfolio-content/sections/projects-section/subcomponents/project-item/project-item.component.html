@@ -1,0 +1,32 @@
+<div class="project-item">
+  <h3 class="project-title">{{ project.title }}</h3>
+  @if (project.images && project.images.length > 0) {
+  <app-project-gallery [project]="project"></app-project-gallery>
+  } @if (isComplexDescription(project.description)) {
+  <div class="complex-description">
+    <p class="overview-text">{{ project.description.overview }}</p>
+    @for (section of project.description.sections; track section.title) {
+    <div class="description-section">
+      <h4 class="section-subtitle">{{ section.title }}</h4>
+      @if (isStringContent(section.content)) {
+      <p class="section-content">{{ section.content }}</p>
+      } @else {
+      <ul class="section-list">
+        @for (item of section.content; track $index) {
+        <li class="section-item">{{ item }}</li>
+        }
+      </ul>
+      }
+    </div>
+    }
+  </div>
+  } @else {
+  <p class="project-description">{{ project.description }}</p>
+  } @if (project.technologies.length > 0) {
+  <div class="technologies">
+    @for (tech of project.technologies; track tech) {
+    <span class="tech-tag">{{ tech }}</span>
+    }
+  </div>
+  }
+</div>

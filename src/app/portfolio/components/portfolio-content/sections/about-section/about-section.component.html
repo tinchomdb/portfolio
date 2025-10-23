@@ -1,0 +1,10 @@
+<section class="content-section about-section" id="about">
+  <div class="section-header">
+    <h2 class="section-title">About</h2>
+  </div>
+  @for (text of aboutText; track $index) {
+  <p class="about-text">
+    {{ text }}
+  </p>
+  }
+</section>

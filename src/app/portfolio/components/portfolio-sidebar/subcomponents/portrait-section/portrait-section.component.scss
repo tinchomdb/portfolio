@@ -1,0 +1,29 @@
+@import '../../../../design.tokens.scss';
+
+.portrait-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+
+  .portrait-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: $radius-lg;
+    border: 2px solid $color-border-light-half;
+    object-fit: cover;
+    transition: all $transition-medium;
+
+    @media (max-width: $breakpoint-md) {
+      max-width: 120px;
+      width: 100%;
+    }
+
+    &:hover {
+      border-color: $color-primary;
+      box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
+      transform: scale(1.05);
+    }
+  }
+}

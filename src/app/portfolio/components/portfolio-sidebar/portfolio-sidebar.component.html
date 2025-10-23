@@ -1,0 +1,18 @@
+<aside class="portfolio-sidebar">
+  <div class="sidebar-left">
+    <!-- Header -->
+    <header class="portfolio-header">
+      <app-name-section [name]="name" [subtitle]="subtitle" [tagline]="tagline"></app-name-section>
+      <app-portrait-section></app-portrait-section>
+      <app-nav-menu [activeSection]="activeSection" (navigate)="onNavigate($event)"></app-nav-menu>
+    </header>
+
+    <!-- Social Links -->
+    <app-social-links [socialLinks]="socialLinks"></app-social-links>
+  </div>
+
+  <!-- Portrait (Mobile only) -->
+  <div class="sidebar-right">
+    <app-portrait-section></app-portrait-section>
+  </div>
+</aside>

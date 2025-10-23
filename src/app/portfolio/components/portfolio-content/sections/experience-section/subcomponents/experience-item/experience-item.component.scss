@@ -1,0 +1,87 @@
+@import '../../../../../../design.tokens.scss';
+
+.experience-item {
+  margin-bottom: 3rem;
+  padding-bottom: $spacing-xl;
+  border-bottom: 1px solid $color-border-light;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .experience-header {
+    display: flex;
+    gap: $spacing-xl;
+    margin-bottom: $spacing-md;
+
+    @media (max-width: $breakpoint-md) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  .year {
+    font-size: $font-size-xs;
+    color: $color-primary;
+    font-weight: $font-weight-semibold;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .experience-title {
+    .title {
+      margin: 0;
+      font-size: $font-size-lg;
+      color: $color-text-primary;
+      font-weight: $font-weight-semibold;
+    }
+
+    .company {
+      margin: $spacing-sm 0 0;
+      color: $color-text-muted;
+      font-size: $font-size-sm;
+    }
+  }
+
+  .description {
+    margin: $spacing-md 0 0;
+    color: $color-text-secondary;
+    line-height: $line-height-relaxed;
+    font-size: $font-size-md;
+  }
+
+  .description-list {
+    margin: $spacing-md 0 0;
+    padding-left: $spacing-lg;
+    list-style: disc;
+  }
+
+  .description-item {
+    color: $color-text-secondary;
+    line-height: $line-height-relaxed;
+    font-size: $font-size-md;
+    margin-bottom: 0.75rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+    margin-top: $spacing-md;
+  }
+
+  .skill-tag {
+    background: $color-overlay-light;
+    color: $color-primary;
+    padding: $spacing-sm $spacing-md;
+    border-radius: $radius-sm;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-medium;
+    border: 1px solid $color-overlay-light-dark;
+  }
+}

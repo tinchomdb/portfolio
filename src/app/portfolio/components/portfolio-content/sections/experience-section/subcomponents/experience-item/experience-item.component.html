@@ -1,0 +1,26 @@
+<div class="experience-item">
+  <div class="experience-header">
+    <span class="year">{{ experience.year }}</span>
+    <div class="experience-title">
+      <h3 class="title">{{ experience.title }}</h3>
+      @if (experience.company) {
+      <p class="company">{{ experience.company }}</p>
+      }
+    </div>
+  </div>
+  @if (isDescriptionArray(experience.description)) {
+  <ul class="description-list">
+    @for (point of experience.description; track $index) {
+    <li class="description-item">{{ point }}</li>
+    }
+  </ul>
+  } @else {
+  <p class="description">{{ experience.description }}</p>
+  } @if (experience.skills.length > 0) {
+  <div class="skills">
+    @for (skill of experience.skills; track skill) {
+    <span class="skill-tag">{{ skill }}</span>
+    }
+  </div>
+  }
+</div>

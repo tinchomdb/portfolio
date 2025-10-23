@@ -1,0 +1,8 @@
+<section class="content-section projects-section" id="projects">
+  <div class="section-header">
+    <h2 class="section-title">Projects</h2>
+  </div>
+  @for (project of projects; track $index) {
+  <app-project-item [project]="project"></app-project-item>
+  }
+</section>

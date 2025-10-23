@@ -1,0 +1,15 @@
+<nav class="nav-menu">
+  <ul>
+    @for (item of navItems; track item.id) {
+    <li>
+      <button
+        (click)="onNavigate(item.id, item.id)"
+        [class.active]="activeSection === item.id"
+        class="nav-button"
+      >
+        {{ item.label }}
+      </button>
+    </li>
+    }
+  </ul>
+</nav>

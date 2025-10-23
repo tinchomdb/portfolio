@@ -1,0 +1,25 @@
+@import './design.tokens.scss';
+
+.portfolio {
+  min-height: 100vh;
+  background: linear-gradient(135deg, $color-bg-dark 0%, $color-bg-darker 100%);
+  color: $color-text-primary;
+  font-family: $font-family;
+  padding: 0 $spacing-xl;
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: $spacing-xxxl;
+  min-height: 100vh;
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+    gap: $spacing-xl;
+    padding: $spacing-lg;
+  }
+}

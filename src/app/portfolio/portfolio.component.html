@@ -1,0 +1,20 @@
+<div class="portfolio">
+  <div class="portfolio-container">
+    <!-- Left Sidebar -->
+    <app-portfolio-sidebar
+      [name]="portfolioData.name"
+      [subtitle]="portfolioData.subtitle"
+      [tagline]="portfolioData.tagline"
+      [socialLinks]="portfolioData.social"
+      [activeSection]="activeSection()"
+      (navigate)="scrollToSection($event)"
+    ></app-portfolio-sidebar>
+
+    <!-- Main Content -->
+    <app-portfolio-content
+      [aboutText]="portfolioData.about"
+      [experiences]="experiences"
+      [projects]="projects"
+    ></app-portfolio-content>
+  </div>
+</div>

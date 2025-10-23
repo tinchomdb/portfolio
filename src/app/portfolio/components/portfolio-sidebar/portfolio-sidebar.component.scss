@@ -1,0 +1,67 @@
+@import '../../design.tokens.scss';
+
+.portfolio-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: sticky;
+  top: $spacing-xxxl;
+  height: calc(100vh - $spacing-xxxl);
+  max-height: calc(100vh - $spacing-xxxl);
+
+  @media (max-width: $breakpoint-md) {
+    position: relative;
+    top: auto;
+    height: auto;
+    max-height: none;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: $spacing-lg;
+  }
+}
+
+.sidebar-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  @media (max-width: $breakpoint-md) {
+    flex: 1;
+  }
+}
+
+.sidebar-right {
+  display: none;
+
+  @media (max-width: $breakpoint-md) {
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+}
+
+.portfolio-header {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xxl;
+  flex-grow: 1;
+
+  @media (max-width: $breakpoint-md) {
+    gap: $spacing-lg;
+
+    app-portrait-section {
+      display: none;
+    }
+  }
+}
+
+.header-top {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xl;
+
+  @media (max-width: $breakpoint-md) {
+    flex: 1;
+  }
+}
