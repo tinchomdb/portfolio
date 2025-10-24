@@ -22,7 +22,7 @@
   }
 
   .complex-description {
-    margin: 0 0 $spacing-md;
+    margin: 0 0 $spacing-lg;
 
     .overview-text {
       color: $color-text-secondary;
@@ -48,7 +48,7 @@
       .section-content {
         color: $color-text-secondary;
         line-height: $line-height-relaxed;
-        font-size: $font-size-sm;
+        font-size: $font-size-md;
         margin: 0;
       }
 
@@ -60,7 +60,7 @@
         .section-item {
           color: $color-text-secondary;
           line-height: $line-height-relaxed;
-          font-size: $font-size-sm;
+          font-size: $font-size-md;
           margin-bottom: 0.5rem;
 
           &:last-child {

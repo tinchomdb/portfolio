@@ -1,4 +1,4 @@
-@import '../../../../design.tokens.scss';
+@use '../../../../design.tokens.scss' as *;
 
 .about-text {
   margin: 0 0 1.5rem;

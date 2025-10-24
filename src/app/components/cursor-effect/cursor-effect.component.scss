@@ -1,4 +1,4 @@
-@import '../../portfolio/design.tokens.scss';
+@use '../../portfolio/design.tokens.scss' as *;
 
 .cursor-container {
   position: fixed;
