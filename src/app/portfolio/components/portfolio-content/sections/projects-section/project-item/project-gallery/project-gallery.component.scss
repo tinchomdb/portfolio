@@ -1,4 +1,4 @@
-@import '../../../../../../design.tokens.scss';
+@use '../../../../../../design.tokens.scss' as *;
 
 .project-gallery {
   margin: 2rem 0;
@@ -12,11 +12,13 @@
   border-radius: $radius-md;
   background: rgba(100, 255, 218, 0.05);
   position: relative;
+  aspect-ratio: 16 / 9;
 
   .main-image {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
+    object-fit: scale-down;
     transition: filter $transition-medium;
   }
 
