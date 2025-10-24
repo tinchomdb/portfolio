@@ -15,12 +15,22 @@ export const PORTFOLIO_DATA = {
       url: 'https://www.linkedin.com/in/martin-barroso/',
       icon: 'M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.002 1.413-.103.249-.129.597-.129.946v5.446h-3.554v-11h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 8.855c-1.144 0-2.063-.931-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.134-.924 2.065-2.064 2.065zm1.782 11.597H3.555v-11h3.564v11zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z',
     },
+    {
+      name: 'Email',
+      url: 'mailto:martindanielbarroso@gmail.com',
+      icon: 'M0 3v18h24V3H0zm21.518 2L12 13.081 2.482 5h19.036zM2 19V6.236l10 7.934 10-7.934V19H2z',
+    },
+    {
+      name: 'CV',
+      url: '/assets/cv.pdf',
+      icon: 'M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-8-6z',
+    },
   ],
   about: [
-    'Full-stack developer with 4 years of experience in Angular and .NET. My main strength is frontend development — turning ideas into clean, functional interfaces. I enjoy working on a team: discussing solutions, keeping things simple, and making sure what we build actually works for users.',
+    'Full-stack developer with 4 years of experience in Angular and .NET. My main strength is frontend development, with clean modular and simple code. I enjoy working on a team: discussing solutions, and making sure what we build actually works for users.',
     'I also have hands-on experience with Salesforce Commerce Cloud integrations. and cloud services in Azure, including Active Directory B2C, Cosmos DB, and web app deployments.',
-    'Before becoming a software developer, I ran my own restaurant for ten years. Managing a business taught me how to spot what really matters — understanding customers, keeping things running efficiently, and making decisions that add real value. I bring that same mindset to software: building things that solve real problems and make sense from a business point of view.',
     'I am eager to leverage my skill set, quickly learn new technologies, and contribute to impactful projects. Feel free to connect with me to discuss opportunities in web development and software engineering.',
+    'Before becoming a software developer, I ran my own restaurant for ten years. Managing a business taught me how to spot what really matters — understanding customers, keeping things running efficiently, and making decisions that add real value. I bring that same mindset to software: building things that solve real problems and make sense from a business point of view.',
   ],
 };
 
@@ -28,7 +38,7 @@ export const EXPERIENCES: Experience[] = [
   {
     year: '2022— PRESENT',
     title: 'Software Developer',
-    company: 'Universal Robots',
+    company: 'Universal Robots - Odense, Denmark',
     description: [
       'Developed and maintained web applications with a strong focus on Angular and .NET, contributing to a server-side rendered (SSR) website and an internal component library documented with Storybook',
       'Managed and integrated Azure services, including Active Directory B2C, Functions, Cosmos DB, Blob storage and Table Storage',
@@ -56,7 +66,7 @@ export const EXPERIENCES: Experience[] = [
   {
     year: '2021',
     title: 'Software Developer',
-    company: 'Slingr',
+    company: 'Slingr - Mendoza, Argentina',
     description:
       'Developed and maintained full-stack web solutions for a large enterprise client, ADP, on their Lifion platform.',
     skills: ['Agile', 'Full-Stack Development'],
@@ -88,10 +98,11 @@ export const PROJECTS: Project[] = [
           title: 'Backend',
           content: [
             'Implemented with .NET API, including Cosmos DB integration for data storage',
-            "Caching with .NET's built-in IMemoryCache",
+            'Results are cached and paginated to optimize performance',
             'Secure configuration using Azure Key Vault',
             'Stripe webhook to validate and confirm payments',
-            'Pagination, guest cart identification via JWT, and unit tests with xUnit',
+            'Guest cart identification via JWT',
+            'Unit tests with xUnit',
             'Deployed as an Azure Web App Service',
           ],
         },
@@ -107,6 +118,7 @@ export const PROJECTS: Project[] = [
       'Azure',
       'Cosmos DB',
       'MSAL',
+      'Entra ID',
       'JWT',
       'Cypress',
       'Stripe',

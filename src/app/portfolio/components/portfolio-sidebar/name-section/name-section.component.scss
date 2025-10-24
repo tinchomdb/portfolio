@@ -10,10 +10,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-
-    @media (max-width: $breakpoint-md) {
-      font-size: $font-size-xxxl;
-    }
   }
 
   .subtitle {
@@ -28,5 +24,17 @@
     color: $color-text-secondary;
     margin: $spacing-md 0 0;
     line-height: $line-height-normal;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    h1 {
+      font-size: $font-size-xxxl;
+    }
+    .subtitle {
+      font-size: $font-size-md;
+    }
+    .tagline {
+      font-size: $font-size-sm;
+    }
   }
 }
