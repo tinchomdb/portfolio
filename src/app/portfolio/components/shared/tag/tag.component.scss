@@ -1,0 +1,20 @@
+@import '../../../design.tokens.scss';
+
+.tag {
+  background: $color-overlay-light;
+  color: $color-primary;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $radius-sm;
+  font-weight: $font-weight-medium;
+  border: 1px solid $color-overlay-light-dark;
+  display: inline-block;
+  white-space: nowrap;
+
+  &.size-sm {
+    font-size: $font-size-sm;
+  }
+
+  &.size-xs {
+    font-size: $font-size-xs;
+  }
+}

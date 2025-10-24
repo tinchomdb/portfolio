@@ -19,7 +19,7 @@
   } @if (experience.skills.length > 0) {
   <div class="skills">
     @for (skill of experience.skills; track skill) {
-    <span class="skill-tag">{{ skill }}</span>
+    <app-tag [text]="skill" size="sm"></app-tag>
     }
   </div>
   }

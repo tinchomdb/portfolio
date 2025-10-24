@@ -1,8 +1,5 @@
-<section class="content-section experience-section" id="experience">
-  <div class="section-header">
-    <h2 class="section-title">Experience</h2>
-  </div>
+<app-base-section sectionTitle="Experience" sectionId="experience">
   @for (exp of experiences; track $index) {
-  <app-experience-item [experience]="exp"></app-experience-item>
+  <app-experience-item [experience]="exp" class="item"></app-experience-item>
   }
-</section>
+</app-base-section>

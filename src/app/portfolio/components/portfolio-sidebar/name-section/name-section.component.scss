@@ -1,8 +1,8 @@
-@import '../../../../design.tokens.scss';
+@import '../../../design.tokens.scss';
 
 .name-section {
   h1 {
-    font-size: $font-size-xxxl;
+    font-size: $font-size-xxxxl;
     font-weight: $font-weight-bold;
     margin: 0;
     line-height: $line-height-tight;
@@ -12,12 +12,12 @@
     background-clip: text;
 
     @media (max-width: $breakpoint-md) {
-      font-size: $font-size-xxl;
+      font-size: $font-size-xxxl;
     }
   }
 
   .subtitle {
-    font-size: $font-size-md;
+    font-size: $font-size-lg;
     color: $color-text-muted;
     margin: $spacing-sm 0 0;
     font-weight: $font-weight-regular;

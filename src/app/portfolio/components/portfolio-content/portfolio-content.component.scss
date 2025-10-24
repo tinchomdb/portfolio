@@ -2,7 +2,7 @@
 
 .portfolio-content {
   padding-top: $spacing-xxxl;
-  max-width: 600px;
+  max-width: 750px;
   min-height: auto;
   display: flex;
   flex-direction: column;
@@ -11,5 +11,10 @@
   @media (max-width: $breakpoint-md) {
     padding: 0;
     gap: $spacing-xxxl;
+  }
+
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, $color-border-light-half 0%, transparent 100%);
   }
 }

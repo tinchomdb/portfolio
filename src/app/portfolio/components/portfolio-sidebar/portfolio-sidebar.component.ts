@@ -1,10 +1,10 @@
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SocialLink } from '../../../portfolio/portfolio.model';
-import { NameSectionComponent } from './subcomponents/name-section/name-section.component';
-import { NavMenuComponent } from './subcomponents/nav-menu/nav-menu.component';
-import { SocialLinksComponent } from './subcomponents/social-links/social-links.component';
-import { PortraitSectionComponent } from './subcomponents/portrait-section/portrait-section.component';
+import { NameSectionComponent } from './name-section/name-section.component';
+import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { SocialLinksComponent } from './social-links/social-links.component';
+import { PortraitSectionComponent } from './portrait-section/portrait-section.component';
 
 @Component({
   selector: 'app-portfolio-sidebar',

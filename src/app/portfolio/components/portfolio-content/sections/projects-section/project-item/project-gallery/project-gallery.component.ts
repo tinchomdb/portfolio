@@ -1,6 +1,6 @@
 import { Component, Input, ChangeDetectionStrategy, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Project } from '../../../../../../../../portfolio.model';
+import { Project } from '../../../../../../portfolio.model';
 
 interface ProjectImage {
   url: string;

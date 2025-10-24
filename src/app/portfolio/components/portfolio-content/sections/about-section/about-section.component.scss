@@ -1,83 +1,40 @@
 @import '../../../../design.tokens.scss';
 
-.content-section {
-  animation: fadeIn $transition-medium;
-  scroll-margin-top: 80px;
+.about-text {
+  margin: 0 0 1.5rem;
+  line-height: $line-height-loose;
+  font-size: $font-size-md;
+  color: $color-text-secondary;
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .link {
+    color: $color-primary;
+    text-decoration: none;
+    font-weight: $font-weight-medium;
+    position: relative;
+    transition: all $transition-fast;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: $color-primary;
+      transition: width $transition-fast;
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
+
+    &:hover::after {
+      width: 100%;
     }
   }
 
-  .section-header {
-    display: flex;
-    align-items: center;
-    gap: $spacing-md;
-    margin-bottom: 2rem;
-
-    .section-title {
-      margin: 0;
-      font-size: $font-size-xl;
-      color: $color-text-primary;
-      font-weight: $font-weight-semibold;
-      letter-spacing: 0.05em;
-      display: flex;
-      align-items: center;
-
-      &::after {
-        content: '';
-        flex: 1;
-        height: 1px;
-        background: linear-gradient(90deg, $color-border-light-half 0%, transparent 100%);
-        margin-left: $spacing-md;
-      }
-    }
-  }
-}
-
-.about-section {
-  .about-text {
-    margin: 0 0 1.5rem;
-    line-height: $line-height-loose;
-    font-size: $font-size-md;
-    color: $color-text-secondary;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    .link {
-      color: $color-primary;
-      text-decoration: none;
-      font-weight: $font-weight-medium;
-      position: relative;
-      transition: all $transition-fast;
-
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-        width: 0;
-        height: 1px;
-        background: $color-primary;
-        transition: width $transition-fast;
-      }
-
-      &:hover::after {
-        width: 100%;
-      }
-    }
-
-    .highlight {
-      color: $color-primary;
-      font-weight: $font-weight-medium;
-    }
+  .highlight {
+    color: $color-primary;
+    font-weight: $font-weight-medium;
   }
 }

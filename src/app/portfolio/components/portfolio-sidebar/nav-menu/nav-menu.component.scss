@@ -1,4 +1,4 @@
-@import '../../../../design.tokens.scss';
+@import '../../../design.tokens.scss';
 
 .nav-menu {
   ul {
@@ -15,7 +15,7 @@
   background: none;
   border: none;
   color: $color-text-muted;
-  font-size: $font-size-xs;
+  font-size: $font-size-lg;
   font-weight: $font-weight-semibold;
   letter-spacing: 0.1em;
   cursor: pointer;

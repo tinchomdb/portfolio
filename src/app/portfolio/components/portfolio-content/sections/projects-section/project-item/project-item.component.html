@@ -25,7 +25,7 @@
   } @if (project.technologies.length > 0) {
   <div class="technologies">
     @for (tech of project.technologies; track tech) {
-    <span class="tech-tag">{{ tech }}</span>
+    <app-tag [text]="tech" size="sm"></app-tag>
     }
   </div>
   }

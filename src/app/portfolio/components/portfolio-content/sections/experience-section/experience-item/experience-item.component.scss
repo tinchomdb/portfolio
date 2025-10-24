@@ -1,8 +1,11 @@
-@import '../../../../../../design.tokens.scss';
+@import '../../../../../design.tokens.scss';
+
+:host:not(:last-child) {
+  display: block;
+  margin-bottom: 3rem;
+}
 
 .experience-item {
-  margin-bottom: 3rem;
-  padding-bottom: $spacing-xl;
   border-bottom: 1px solid $color-border-light;
 
   &:last-child {
@@ -11,7 +14,8 @@
 
   .experience-header {
     display: flex;
-    gap: $spacing-xl;
+    flex-direction: column;
+    gap: $spacing-sm;
     margin-bottom: $spacing-md;
 
     @media (max-width: $breakpoint-md) {
@@ -21,7 +25,7 @@
   }
 
   .year {
-    font-size: $font-size-xs;
+    font-size: $font-size-md;
     color: $color-primary;
     font-weight: $font-weight-semibold;
     letter-spacing: 0.05em;
@@ -40,19 +44,19 @@
     .company {
       margin: $spacing-sm 0 0;
       color: $color-text-muted;
-      font-size: $font-size-sm;
+      font-size: $font-size-md;
     }
   }
 
   .description {
-    margin: $spacing-md 0 0;
+    margin: $spacing-lg 0;
     color: $color-text-secondary;
     line-height: $line-height-relaxed;
     font-size: $font-size-md;
   }
 
   .description-list {
-    margin: $spacing-md 0 0;
+    margin: $spacing-lg 0;
     padding-left: $spacing-lg;
     list-style: disc;
   }
@@ -73,15 +77,5 @@
     flex-wrap: wrap;
     gap: $spacing-sm;
     margin-top: $spacing-md;
-  }
-
-  .skill-tag {
-    background: $color-overlay-light;
-    color: $color-primary;
-    padding: $spacing-sm $spacing-md;
-    border-radius: $radius-sm;
-    font-size: $font-size-xs;
-    font-weight: $font-weight-medium;
-    border: 1px solid $color-overlay-light-dark;
   }
 }

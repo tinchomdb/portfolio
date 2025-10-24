@@ -1,0 +1,42 @@
+@import '../../../../design.tokens.scss';
+
+.content-section {
+  animation: fadeIn $transition-medium;
+  scroll-margin-top: 80px;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+    margin-bottom: $spacing-xl;
+
+    .section-title {
+      margin: 0;
+      font-size: $font-size-xxl;
+      color: $color-text-primary;
+      font-weight: $font-weight-semibold;
+      letter-spacing: 0.05em;
+      display: flex;
+      align-items: center;
+
+      &::after {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(90deg, $color-border-light-half 0%, transparent 100%);
+        margin-left: $spacing-md;
+      }
+    }
+  }
+}

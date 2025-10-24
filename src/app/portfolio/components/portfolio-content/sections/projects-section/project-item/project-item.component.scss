@@ -1,4 +1,4 @@
-@import '../../../../../../design.tokens.scss';
+@import '../../../../../design.tokens.scss';
 
 :host {
   margin-bottom: 2.5rem;
@@ -75,15 +75,5 @@
     display: flex;
     flex-wrap: wrap;
     gap: $spacing-sm;
-  }
-
-  .tech-tag {
-    background: $color-overlay-light;
-    color: $color-primary;
-    padding: $spacing-sm $spacing-md;
-    border-radius: $radius-sm;
-    font-size: $font-size-xs;
-    font-weight: $font-weight-medium;
-    border: 1px solid $color-overlay-light-dark;
   }
 }
