@@ -9,6 +9,7 @@
   .portrait-image {
     width: 100%;
     max-width: 200px;
+    min-width: 60px;
     height: auto;
     border-radius: $radius-lg;
     border: 2px solid $color-border-light-half;
