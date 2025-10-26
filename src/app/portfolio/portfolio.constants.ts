@@ -1,4 +1,4 @@
-import { Experience, Project } from './portfolio.model';
+import { Experience, Project, SocialLink } from './portfolio.model';
 
 export const PORTFOLIO_DATA = {
   name: 'Martin Barroso',
@@ -25,7 +25,7 @@ export const PORTFOLIO_DATA = {
       url: '/assets/cv.pdf',
       icon: 'document',
     },
-  ],
+  ] as SocialLink[],
   about: [
     'Full-stack developer with 4 years of experience in Angular and .NET. My main strength is frontend development, with clean modular and simple code. I enjoy working on a team: discussing solutions, and making sure what we build actually works for users.',
     'I also have hands-on experience with Salesforce Commerce Cloud integrations. and cloud services in Azure, including Active Directory B2C, Cosmos DB, and web app deployments.',

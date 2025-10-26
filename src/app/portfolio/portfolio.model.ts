@@ -30,13 +30,5 @@ export interface Project {
 export interface SocialLink {
   name: string;
   url: string;
-  icon:
-    | 'github'
-    | 'linkedin'
-    | 'twitter'
-    | 'instagram'
-    | 'email'
-    | 'globe'
-    | 'codepen'
-    | 'document';
+  icon: 'github' | 'linkedin' | 'email' | 'document' | 'external' | 'arrow';
 }
