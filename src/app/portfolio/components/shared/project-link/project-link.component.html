@@ -1,0 +1,17 @@
+<a
+  [href]="href"
+  [class]="'project-link variant-' + variant"
+  [target]="isExternal ? '_blank' : undefined"
+  [rel]="isExternal ? 'noopener noreferrer' : undefined"
+>
+  <svg
+    [attr.viewBox]="iconData.viewBox"
+    width="20"
+    height="20"
+    fill="currentColor"
+    class="link-icon"
+  >
+    <path [attr.d]="iconData.path" />
+  </svg>
+  <span>{{ label }}</span>
+</a>

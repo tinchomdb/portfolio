@@ -76,4 +76,11 @@
     flex-wrap: wrap;
     gap: $spacing-sm;
   }
+
+  .project-links {
+    display: flex;
+    gap: $spacing-md;
+    margin: $spacing-lg 0;
+    flex-wrap: wrap;
+  }
 }

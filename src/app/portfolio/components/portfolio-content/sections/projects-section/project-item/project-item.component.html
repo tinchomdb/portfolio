@@ -2,6 +2,24 @@
   <h3 class="project-title">{{ project.title }}</h3>
   @if (project.images && project.images.length > 0) {
   <app-project-gallery [project]="project"></app-project-gallery>
+  } @if (project.github || project.liveDemo) {
+  <div class="project-links">
+    @if (project.github) {
+    <app-project-link
+      [href]="project.github"
+      label="GitHub"
+      variant="primary"
+      icon="github"
+    ></app-project-link>
+    } @if (project.liveDemo) {
+    <app-project-link
+      [href]="project.liveDemo"
+      label="Live Demo"
+      variant="secondary"
+      icon="external"
+    ></app-project-link>
+    }
+  </div>
   } @if (isComplexDescription(project.description)) {
   <div class="complex-description">
     <p class="overview-text">{{ project.description.overview }}</p>

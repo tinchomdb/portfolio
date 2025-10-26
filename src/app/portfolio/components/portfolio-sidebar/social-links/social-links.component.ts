@@ -1,6 +1,7 @@
-import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SocialLink } from '../../../portfolio.model';
+import { IconService, IconData } from '../../../../services/icon.service';
 
 @Component({
   selector: 'app-social-links',
@@ -11,5 +12,11 @@ import { SocialLink } from '../../../portfolio.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SocialLinksComponent {
+  private readonly iconService = inject(IconService);
+
   @Input() socialLinks: SocialLink[] = [];
+
+  getIcon(iconName: string): IconData {
+    return this.iconService.getIcon(iconName as any);
+  }
 }
