@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CursorEffectComponent } from './components/cursor-effect/cursor-effect.component';
+import { CursorEffectComponent } from './portfolio/components/cursor-effect/cursor-effect.component';
 
 @Component({
   selector: 'app-root',

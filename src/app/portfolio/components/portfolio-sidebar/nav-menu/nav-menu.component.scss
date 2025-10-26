@@ -24,6 +24,10 @@
   transition: all $transition-fast;
   text-align: left;
 
+  @media screen and (max-width: $breakpoint-md) {
+    font-size: $font-size-sm;
+  }
+
   &:hover {
     color: $color-primary;
   }

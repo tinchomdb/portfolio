@@ -5,7 +5,10 @@
   background: linear-gradient(135deg, $color-bg-dark 0%, $color-bg-darker 100%);
   color: $color-text-primary;
   font-family: $font-family;
-  padding: 0 $spacing-xl;
+  padding: $spacing-xl;
+  @media (max-width: $breakpoint-sm) {
+    padding: $spacing-md;
+  }
 }
 
 .portfolio-container {
@@ -20,6 +23,5 @@
   @media (max-width: $breakpoint-lg) {
     flex-direction: column;
     gap: $spacing-xl;
-    padding: $spacing-lg;
   }
 }
