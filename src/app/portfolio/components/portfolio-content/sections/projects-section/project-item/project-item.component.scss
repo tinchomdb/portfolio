@@ -1,4 +1,4 @@
-@import '../../../../../design.tokens.scss';
+@use '../../../../../design.tokens.scss' as *;
 
 :host {
   margin-bottom: 2.5rem;

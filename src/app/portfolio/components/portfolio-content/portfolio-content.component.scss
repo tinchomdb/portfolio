@@ -1,7 +1,7 @@
 @use '../../design.tokens.scss' as *;
 
 .portfolio-content {
-  max-width: 750px;
+  max-width: $layout-max-width-content;
   min-height: auto;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   }
 
   .section-divider {
-    height: 1px;
+    height: $border-width-sm;
     background: linear-gradient(90deg, $color-border-light-half 0%, transparent 100%);
   }
 }

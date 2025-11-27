@@ -5,7 +5,7 @@
   align-items: center;
   gap: $spacing-sm;
   padding: $spacing-sm $spacing-md;
-  border: 2px solid;
+  border: $border-width-md solid;
   border-radius: $radius-md;
   text-decoration: none;
   font-weight: $font-weight-semibold;
@@ -28,13 +28,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: 20px;
+    width: $size-icon-sm;
+    height: $size-icon-sm;
   }
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(100, 255, 218, 0.15);
+    box-shadow: $shadow-card-hover;
 
     &::before {
       opacity: 0.2;
@@ -50,7 +50,7 @@
     border-color: $color-primary;
 
     &:hover {
-      background-color: rgba(100, 255, 218, 0.05);
+      background-color: $color-primary-transparent-05;
     }
   }
 
@@ -59,7 +59,7 @@
     border-color: $color-primary-light;
 
     &:hover {
-      background-color: rgba(168, 255, 255, 0.05);
+      background-color: $color-primary-light-transparent-05;
     }
   }
 }

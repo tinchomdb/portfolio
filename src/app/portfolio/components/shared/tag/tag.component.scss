@@ -6,7 +6,7 @@
   padding: $spacing-sm $spacing-md;
   border-radius: $radius-sm;
   font-weight: $font-weight-medium;
-  border: 1px solid $color-overlay-light-dark;
+  border: $border-width-sm solid $color-overlay-light-dark;
   display: inline-block;
   white-space: nowrap;
 

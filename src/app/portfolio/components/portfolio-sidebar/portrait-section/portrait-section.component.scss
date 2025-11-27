@@ -8,22 +8,22 @@
 
   .portrait-image {
     width: 100%;
-    max-width: 200px;
-    min-width: 60px;
+    max-width: $size-portrait-max;
+    min-width: $size-portrait-min;
     height: auto;
     border-radius: $radius-lg;
-    border: 2px solid $color-border-light-half;
+    border: $border-width-md solid $color-border-light-half;
     object-fit: cover;
     transition: all $transition-medium;
 
     @media (max-width: $breakpoint-md) {
-      max-width: 120px;
+      max-width: $size-portrait-max-mobile;
       width: 100%;
     }
 
     &:hover {
       border-color: $color-primary;
-      box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
+      box-shadow: $shadow-glow-lg;
       transform: scale(1.05);
     }
   }

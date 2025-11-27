@@ -24,6 +24,20 @@ $color-border-light-half: rgba(100, 255, 218, 0.5);
 $color-overlay-light: rgba(100, 255, 218, 0.1);
 $color-overlay-light-dark: rgba(100, 255, 218, 0.3);
 
+// Transparent colors
+$color-primary-transparent-05: rgba(100, 255, 218, 0.05);
+$color-primary-transparent-10: rgba(100, 255, 218, 0.1);
+$color-primary-transparent-20: rgba(100, 255, 218, 0.2);
+$color-primary-transparent-40: rgba(100, 255, 218, 0.4);
+$color-primary-transparent-50: rgba(100, 255, 218, 0.5);
+$color-primary-transparent-60: rgba(100, 255, 218, 0.6);
+$color-primary-transparent-80: rgba(100, 255, 218, 0.8);
+
+$color-primary-light-transparent-05: rgba(168, 255, 255, 0.05);
+$color-primary-light-transparent-40: rgba(168, 255, 255, 0.4);
+
+$color-bg-dark-transparent-85: rgba(10, 14, 39, 0.85);
+
 // ============================================================================
 // TYPOGRAPHY
 // ============================================================================
@@ -33,6 +47,7 @@ $font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 
 // Font sizes
+$font-size-xxs: 0.6rem;
 $font-size-xs: 0.5rem;
 $font-size-sm: 0.75rem;
 $font-size-md: 1rem;
@@ -56,6 +71,29 @@ $line-height-relaxed: 1.6;
 $line-height-loose: 1.8;
 
 // ============================================================================
+// SIZES & DIMENSIONS
+// ============================================================================
+
+// Icon sizes
+$size-icon-xs: 1rem; // 16px
+$size-icon-sm: 1.25rem; // 20px
+$size-icon-md: 1.5rem; // 24px
+$size-icon-lg: 1.75rem; // 28px
+$size-icon-xl: 2.5rem; // 40px
+$size-icon-xxl: 3.75rem; // 60px
+$size-icon-xxxl: 5rem; // 80px
+
+// Component sizes
+$size-button-height: 50px;
+$size-portrait-min: 60px;
+$size-portrait-max: 200px;
+$size-portrait-max-mobile: 120px;
+
+// Layout
+$layout-max-width-content: 750px;
+$layout-scroll-margin: 80px;
+
+// ============================================================================
 // SPACING
 // ============================================================================
 
@@ -71,9 +109,23 @@ $spacing-xxxl: 4rem;
 // BORDER RADIUS
 // ============================================================================
 
+// Border widths
+$border-width-sm: 1px;
+$border-width-md: 2px;
+
+// Border radius
 $radius-sm: 0.25rem;
 $radius-md: 0.5rem;
 $radius-lg: 1rem;
+$radius-pill: 50px;
+
+// ============================================================================
+// EFFECTS
+// ============================================================================
+
+// Blurs
+$blur-sm: 2px;
+$blur-md: 12px;
 
 // ============================================================================
 // TRANSITIONS
@@ -91,8 +143,17 @@ $shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
 $shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
 $shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
 
+$shadow-glow-xs: 0 0 4px rgba(100, 255, 218, 0.6);
+$shadow-glow-sm: 0 0 6px rgba(100, 255, 218, 0.8);
+$shadow-glow-md: 0 0 12px rgba(100, 255, 218, 1);
+$shadow-glow-lg: 0 0 20px rgba(100, 255, 218, 0.2);
+$shadow-glow-xl: 0 0 30px rgba(100, 255, 218, 0.5);
+
+$shadow-card-hover: 0 8px 16px rgba(100, 255, 218, 0.15);
+$shadow-card-hover-lg: 0 8px 24px rgba(100, 255, 218, 0.2);
+
 // ============================================================================
-// RESPONSIVE BREAKPOINTS
+// BREAKPOINTS
 // ============================================================================
 
 $breakpoint-sm: 576px;

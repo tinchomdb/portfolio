@@ -27,7 +27,7 @@ export const PORTFOLIO_DATA = {
     },
   ] as SocialLink[],
   about: [
-    "I'm a frontend-focused full-stack developer with 4 years of experience in Angular and .NET. My main strength is frontend development, with clean modular and simple code. I enjoy working on a team: discussing solutions, and making sure what we build actually works for users.",
+    "I'm a frontend-focused full-stack developer with 4 years of experience in Angular and .NET. My main strength is frontend development, with clean modular and maintainable code. I enjoy working on a team: discussing solutions, and making sure what we build actually works for users.",
     'I also have hands-on experience with Salesforce Commerce Cloud integrations. and cloud services in Azure, including Active Directory B2C, Cosmos DB, and web app deployments.',
     'I like to learn new technologies, and contribute to impactful projects. Feel free to connect with me to discuss opportunities in web development and software engineering.',
     'Before becoming a software developer, I ran my own restaurant for ten years. Managing a business taught me how to spot what really matters — understanding customers, keeping things running efficiently, and making decisions that add real value. I bring that same mindset to software: building things that solve real problems and make sense from a business point of view.',
